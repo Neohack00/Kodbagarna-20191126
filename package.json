@@ -1,0 +1,24 @@
+{
+  "name": "kodbagarna-20191126",
+  "version": "1.0.0",
+  "description": "HI, reader.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neohack00/Kodbagarna-20191126.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Neohack00/Kodbagarna-20191126/issues"
+  },
+  "homepage": "https://github.com/Neohack00/Kodbagarna-20191126#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^13.1.0",
+    "nodemon": "^2.0.1"
+  }
+}
