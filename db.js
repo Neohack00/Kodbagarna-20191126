@@ -15,10 +15,10 @@ MongoClient.connect(url, {useUnifiedTopology:true}, function(err, db) {
 
     });
 
-    var titlename = req.body.titlename;
-    var democontent = req.body.democontent;
+    // var titlename = req.body.titlename;
+    // var democontent = req.body.democontent;
 
-    var myobj = { name: req.body.titlename, note: req.body.democontent };
+    var myobj = { name: "Test", note: "Test" };
 
     dbo.collection("Test1").insertOne(myobj, function(err, res) {
         if (err) throw err;
@@ -32,7 +32,11 @@ MongoClient.connect(url, {useUnifiedTopology:true}, function(err, db) {
 
     });
 
-    var query = { name: "Eyooo1"};
+    // dbo.listCollections().toArray( function (err, res) {
+    //     console.log(res);
+    // });
+
+    var query = { name: "Test"};
 
     dbo.collection("Test1").find(query).toArray( function(err, res) {
         if (err) throw err;
